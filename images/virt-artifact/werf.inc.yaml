@@ -25,8 +25,6 @@ altPackages:
 - libtool
 - gcc
 - gcc-c++
-- glibc-devel-static
-- glibc
 - golang
 packages:
 - libmnl
@@ -34,6 +32,7 @@ packages:
 - libcurl
 - libxml2 libnl3 libssh numactl libjson-c5 libbsd glib2
 - libtirpc libmd util-linux
+- glibc
 {{- end -}}
 
 {{ $builderDependencies := include "$name" . | fromYaml }}
